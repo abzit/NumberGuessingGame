@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+.page{
+    background-color: gold;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    z-index: -1;
+}
+.title{
+    font-size: 1.1rem;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.container
+{
+    width: 50%;
+    min-height: 30%;
+    max-height: 50%;
+    margin-top: 5rem;
+    background-color: black;
+    color: white;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* position: absolute; */
+
+    border-radius: 2rem;
+    z-index: 0;
+}
+input{
+    padding: 0;
+    width: max-content;
+    align-self: center;
+    background-color:black;
+    color: yellow;
+    font-size:10rem;
+    text-align: center;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+p{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+button{
+    position: absolute;
+    z-index: 1;
+    border: none;
+    bottom: 10rem;
+    right: 40rem;
+    left: 40rem;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    transition: all 0.5s ease-in-out ;
+    align-self: center;
+    filter: drop-shadow(0px 0px 1px rgba(0,0,0,0.5));
+    background-color: #538DD7;
+    font-weight: bolder;
+    color: white;
+}
+button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    filter: drop-shadow(1px 4px 3px rgba(0,0,0,0.5));
+}
+button:active{
+    transform: scale(0.95);
+    filter: drop-shadow(1px 2px 2px rgba(0,0,0,0.5));
+}
+
+header i{
+    font-size: 4rem;
+    color: red;
+    margin: auto 0.5rem;
+}
+
+
+@media screen and (width<=480px){ 
+    header
+    {
+        flex-direction: column ;
+        justify-content: space-around;
+        height: 20%;
+    }
+    .container{
+        margin-top: 4rem;
+        width: 100%;
+        border-radius: 0px;
+    }
+    button{
+        position: fixed;
+        bottom: 3rem;
+        left: 3rem;
+        right: 3rem;
+    }
+}

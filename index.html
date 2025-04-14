@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    </head>
+    <body>
+        <div class="page">
+            <header>
+                <h1>Guess The Number</h1>
+                <div>
+                    <i class="fa-solid fa-heart" id="heart1"></i>
+                    <i class="fa-solid fa-heart" id="heart2"></i>
+                    <i class="fa-solid fa-heart" id="heart3"></i>
+                </div>
+            </header>
+            <div class="container">
+                <div class="title">
+                    <h2>Guess a number between 1 to 10</h2>
+                </div>
+                    <input type="number" min="1" max="10" id="num" value="5">
+                    <button id="guess-button" onclick="guess()">GUESS</button>
+            </div>
+            <div id="result"></div>
+            <h2></h2>
+        </div>
+        <script src="./main.js" async defer></script>
+    </body>
+</html>
