@@ -1,20 +1,4 @@
-// let randomNum=Math.ceil(Math.random()*10);
-// let number
-// do{
-//     number=prompt("Enter a number: ");
-//     if(number==randomNum){
-//         console.log("Guessed Correctly")
-//     }
-//     else if(number<randomNum){
-//         console.log("higher")
-//     }
-//     else if(number>randomNum){
-//         console.log("lower");
-//     }
-//     else{
-//         console.log("invalid ")
-//     }
-// }while(number!=randomNum);
+
 let randomNum=Math.ceil(Math.random()*10);
 console.log(randomNum)
 let life=3;
@@ -51,7 +35,7 @@ function low_life(value){
     }
     else{
         document.getElementById("heart1").style.color="lightgrey";
-        newButton("<p>No Life</p>")
+        newButton(`<p>No Life, The number was ${randomNum}</p>`)
     }
 }
 function newButton(value){
